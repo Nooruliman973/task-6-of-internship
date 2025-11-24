@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Task 6 Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">MyWebsite</h2>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero" data-aos="fade-up">
+        <h1>Welcome to My Interactive Website</h1>
+        <p>Dynamic content • API data • Animations • Responsive design</p>
+    </header>
+
+    <!-- SERVICES SECTION -->
+    <section>
+        <h2>Our Services</h2>
+        <div id="services" class="services-container"></div>
+    </section>
+
+    <!-- API QUOTE SECTION -->
+    <section>
+        <h2>Quote of the Moment</h2>
+        <div id="quoteBox" class="quote-box"></div>
+        <button onclick="loadQuote()">Load New Quote</button>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>

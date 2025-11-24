@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Hero */
+.hero {
+    background: lightblue;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    padding: 20px;
+    background: #eee;
+    border-radius: 10px;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+small {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
